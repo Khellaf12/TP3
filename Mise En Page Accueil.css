@@ -1,121 +1,111 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  th,
-  td {
-    padding: 15px;
-    text-align: left;
-  }
-  
-  th {
-    background-color: #f2f2f2;
-  }
-  
-  h2 {
-    margin-top: 30px;
-  }
-  
-  img {
-    width: 100%;
-    max-width: 300px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .flex-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-  }
-
-  
-  .flex-container>div {
-    text-align: center;
-    width: 30%;
-    margin-bottom: 20px;
-  }
-  
-  video {
-    width: 100%;
-    height: auto;
-  }
-  
-  .header-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 36px;
-    font-weight: bold;
-  }
-  
-  header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 80px; /* Ajustez la hauteur selon vos besoins */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    color: #fff;
-    padding: 15px;
-    text-align: center;
-    transition: background 0.5s;
-  }
-  
-  header:hover {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-  }
-  
-  
-  header:hover {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2));
-  }
-
-  .banner-video {
-    width: 100%; /* Ajustez la largeur selon vos besoins */
-    max-width: 100%;
-    height: 0%;
-  }
-
-  .product-image {
-    width: 100%;
-    max-width: 300px; /* Ajustez la largeur maximale selon vos besoins */
-    height: auto;
-    display: block;
-    margin: 0 auto;
-  }
-
-  .footer {
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 20px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: 120px; /* Ajustez la hauteur selon vos besoins */
-  }
-  
-  .footer-banner {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
+/* Ajoutez cette règle CSS pour fixer la hauteur des images dans les collections Homme et Femme */
+.flex-container img {
+  height: 200px; /* Ajustez la hauteur selon vos préférences */
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+
+/* Ajoutez cette règle CSS pour ajouter un dégradé au fond des cellules <th> */
+th {
+  background: linear-gradient(to bottom, #000, #8383832d); /* Vous pouvez ajuster les couleurs selon vos préférences */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+  z-index: 2; /* Pour placer le th au-dessus de la vidéo */
+}
+
+h2 {
+  margin-top: 30px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.flex-container img {
+  height: 200px; /* Ajustez la hauteur selon vos préférences */
+}
+
+.flex-container>div {
+  text-align: center;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 1; /* Pour placer la vidéo en dessous du th */
+}
+
+.header-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 36px;
+  font-weight: bold;
+  z-index: 3; /* Pour placer le texte "LUCCI" au-dessus de la vidéo et du th */
+}
+
+header {
+  position: relative;
+  height: auto;
+}
+
+.banner-video {
+  width: 100%;
+  max-width: 100%;
+  height: 0%;
+}
+
+.product-image {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 15px;
+  text-align: left;
+  width: 100%;
+  height: 120px;
+  text-align: center;
+}
+
 
