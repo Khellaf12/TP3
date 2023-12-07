@@ -1,0 +1,111 @@
+h1 {
+    font-size: 40px;
+}
+
+p
+ {
+    font-size: 25px;
+ }
+
+ 
+th {
+    background: linear-gradient(to bottom, #000, #b4b4b400); 
+    color: white;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -460%);
+    
+    
+   
+    z-index: 3; 
+  
+    
+  }
+  
+  nav {
+    width: 1000px;
+    width: max-content;
+    border-collapse: collapse;
+    height: 200px;
+    background: linear-gradient(to bottom, #000, #b4b4b400); 
+    
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+  
+    z-index: 3;
+  }
+  
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .flex-container img {
+    height: 500px; 
+  }
+  
+  .flex-container>div {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; 
+  }
+  
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 200px;
+    font-weight: bold;
+    z-index: 3; 
+  }
+  
+  header {
+    position: relative;
+    height: auto;
+  }
+  
+  .banner-video {
+    width: 100%;
+    max-width: 100%;
+    height: 0%;
+  }
+  
+  .footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 100px;
+  }
+  
+  h3 {
+    font-size: 60px;
+  
+  }
+  
+  h2{
+  text-align: center;
+  color: white;
+  font-size: 86px;
+  padding-left: 75px;
+  }
+  
+  p {
+    font-size: 30px;
+  }
