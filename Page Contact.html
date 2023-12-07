@@ -1,6 +1,61 @@
 <!DOCTYPE html>
-<html>
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./Mise En Page Accueil.css">
+</head>
+<body>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Accueil</th>
+        <th>Homme</th>
+        <th>Femme</th>
+        <th>Contact</th>
+        <th>À propos</th>
+      </tr>
+    </thead>
+  </table>
+
+  <h1 class="header-text">LUCCI</h1>
+
+  <video class="banner-video" autoplay loop muted>
+    <source src="./Vidéo/Vidéo Bannière Accueil.mp4" type="video/mp4">
+  </video>
+  
+  <div>
+    <form>
+      <div>
+        <label for="nom">Nom :</label>
+        <input type="text" id="nom" name="nom" required>
+      </div>
+
+      <div>
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div>
+        <label for="telephone">Numéro de Téléphone :</label>
+        <input type="tel" id="telephone" name="telephone" required>
+      </div>
+
+      <div>
+        <label for="question">Question/Problème :</label>
+        <textarea id="question" name="question" rows="4" required></textarea>
+      </div>
+
+      <div>
+        <button type="submit">Soumettre</button>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="footer">
+    <h1>LUCCI</h1>
+  </div>
+</body>
 </html>
