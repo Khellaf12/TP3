@@ -6,7 +6,7 @@ p
  {
     font-size: 25px;
  }
-
+ 
  
 th {
     background: linear-gradient(to bottom, #000, #b4b4b400); 
@@ -108,4 +108,47 @@ th {
   
   p {
     font-size: 30px;
+  }
+  
+  .Barre-Recherche {
+  
+  width: 500px;
+  height: 70px;
+  left: 1100px;
+  width: max-content;
+  border-collapse: collapse;
+  
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  
+  z-index: 3;
+    
+  }
+  .Logo-Utilisateur{
+    width: 500px;
+    height: 70px;
+    left: 1680px;
+    width: max-content;
+    border-collapse: collapse;
+    
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+    z-index: 3;
+  }
+  
+  .Logo-Panier{
+    width: 500px;
+    height: 70px;
+    left: 1750px;
+    width: max-content;
+    border-collapse: collapse;
+    
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    
+    z-index: 3;
   }
