@@ -2,7 +2,8 @@
     font-weight: bolder;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: xx-large;
+    font-size: 75px;
+    text-align: center;
 }
 .Icone img {
     width: 15px;
@@ -22,8 +23,20 @@
     align-items: center;
 }
 .Image-chandails {
-    border-radius: 10px;
     height: 500px;
     display: flex;
     width: fit-content;
+    
+}
+.boite-information {
+    display: flex;
+}
+.texte-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 650px;
+}
+.sous-titre {
+    font-family: Arial, Helvetica, sans-serif;
 }

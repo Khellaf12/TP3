@@ -5,9 +5,17 @@
         <title>Page de présentation</title>
 
         <link href="mise en page index.css" rel="stylesheet" />
+        <style>
+            .contenue {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        </style>
     </head>
 
     <body>
+        <!--En tête pour la catégorie, exemple: retourner à l'accueil, type de page, le style de produit.-->
         <div class="main">
            <div class="Icone"><img src="Images/maison.svg"></div>
             <div class="texte"><p>Homme</p></div>
@@ -16,7 +24,14 @@
             <div class="texte"><p>/</p></div>
             <div class="texte"><p>T-shirt Oversize</p></div>
         </div>
-
-        <div class="Image-chandails"><img src="Images/bmm40648_black_xl.jpg"></div>
+        <!--Code avec flex box pour l'image de produit-->
+        <div class="boite-information">
+            <div class="Image-chandails"><img src="Images/bmm40648_black_xl.jpg"></div>
+            <!--Boite d'information du produit-->
+            <div class="texte-info">
+                <div class="Titre"><p>Lucci</p></div>
+                <div class="sous-titre"><p>Oversize</p></div>
+            </div>
+        </div>
     </body>
 </html>
