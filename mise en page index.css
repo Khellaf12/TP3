@@ -1,0 +1,29 @@
+.Titre {
+    font-weight: bolder;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: xx-large;
+}
+.Icone img {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    margin-right: 10px;
+}
+.texte {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-style: normal;
+    font-size: small;
+    margin: 5px;
+}
+.main {
+    display: flex;
+    align-items: center;
+}
+.Image-chandails {
+    border-radius: 10px;
+    height: 500px;
+    display: flex;
+    width: fit-content;
+}
