@@ -6,9 +6,20 @@
 
         <link href="mise en page index.css" rel="stylesheet" />
         <style>
-            .contenue {
+             .carré {
+                width: 300px;
+                height: 300px;
+                align-content: center;
+                border-radius: 15px;
+                padding: 10px;
+             }
+             .carré-noir {
                 display: flex;
-            }
+                width: 100px;
+                height: 30px;
+                border-radius: 15px;
+                margin: 15px;
+             }
         </style>
     </head>
 
@@ -25,10 +36,26 @@
         <!--Code avec flex box pour l'image de produit-->
         <div class="boite-information">
             <div class="Image-chandails"><img src="Images/bmm40648_black_xl.jpg"></div>
+
             <!--Boite d'information du produit-->
             <div class="texte-info">
                 <div class="Titre"><p>Lucci</p></div>
-                <div class="sous-titre"><p>Oversize</p></div>
+                <div class="sous-titre"><p>T-shirt Oversize</p></div>
+                <div class="carré" style="background-color: lightgray;">
+                    <div class="info-texte">
+                        <p>Le favori de cette saison a été choisi par la communauté. Le grand élu est notre T-shirt Oversize. Il englobe tout, fraîcheur, beauté, simplicité
+                            et mixité. En terme d'efficacité, notre t-shirt fait le poids, sans mauvais jeu de mot. Parce que OUI, il est lourd, mais votre démarche ne sera pas
+                            modifié.
+                        </p>
+                </div>
+                <div class="bouton-grandeur">
+                    <div class="contour-taille"><p>Petit</p></div>
+                    <div class="contour-taille"><p>Moyen</p></div>
+                    <div class="contour-taille"><p>Grand</p></div>
+                </div>
+                <div class="carré-noir" style="background-color: black;">
+                    <div class="texte-achat"><p>Acheter</p></div>  
+                </div>
             </div>
         </div>
     </body>
