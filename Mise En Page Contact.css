@@ -1,0 +1,237 @@
+/*Menu et fênetre modal*/
+nav {
+    background: linear-gradient(to bottom, #000, #b4b4b400); 
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 3;
+  
+  }
+  
+  /*Images et textes*/
+  .flex-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .flex-container img {
+    height: 500px; 
+  }
+  
+  .flex-container>div {
+    text-align: center;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  /*LUCCI en background*/
+  .header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 200px;
+    font-weight: bold;
+    z-index: 3; 
+  }
+  
+  /*Vidéo en background*/
+  .banner-video {
+    width: 100%;
+    max-width: 100%;
+    height: 0%;
+  }
+  
+  /*Bande noir avec nom de la marque de vêtement*/
+  .footer {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    font-size: 100px;
+  }
+  
+  /*Texte: Homme collections et Femme collections*/
+  h3 {
+    font-size: 60px
+  }
+  
+  /*Texte du menu*/
+  h2{
+  text-align: center;
+  color: white;
+  font-size: 64px;
+  padding-left: 75px;
+  padding-right: 75px;
+  }
+  /*Taille texte*/
+  p {
+    font-size: 30px;
+    color: black;
+  }
+  /*Icône*/
+  .Barre-Recherche {
+  width: 200px;
+  height: 40px;
+  left: 1300px;
+  top: 20px;
+  width: max-content;
+  border-collapse: collapse;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  z-index: 3;
+  }
+  
+  .Logo-Utilisateur{
+    width: 200px;
+    height: 50px;
+    left: 1680px;
+    top: 20px;
+    width: max-content;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .Logo-Panier{
+    width: 400px;
+    height: 50px;
+    left: 1750px;
+    top: 20px;
+    width: max-content;
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  /*Liens*/
+  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  
+  /*Fênetre modal pour Homme*/
+  .modal{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top:340px;
+    bottom: 0;
+    left: 0;
+    right: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  
+  .modal:target{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*Texte à l'intérieur de la fênetre modal*/
+  .modal_content{
+    background-color: white;
+    padding: 1.5em 2em;
+    width: 100px;
+    max-width: 50%;
+    position: relative;
+  }
+  
+  /*Permet de fermer la fenêtre modal*/
+  .modal_close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: white;
+    color: black;
+  }
+  
+  /*Fênetre modal pour Femme*/
+  .modal2{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top:340px;
+    bottom: 0;
+    left: 0;
+    right: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal2:target{
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  /*Texte à l'intérieur de la fênetre modal*/
+  .modal2_content{
+    background-color: white;
+    padding: 1.5em 2em;
+    width: 100px;
+    max-width: 50%;
+    position: relative;
+  }
+  
+  /*Permet de fermer la fenêtre modal*/
+  .modal2_close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: white;
+    color: black;
+  }
+  
+  /*Texte: catégtories*/
+  h1{
+    font-size: 30px;
+  }
+  
+  
+  
+
+  /* Champs Réponse Nom */
+input {
+    margin: 25px;
+    height: 50px;
+    width: 350px;
+    font-size: large;
+    position: relative;
+
+    
+}
+
+#question {
+    height: 200px;
+    position: absolute;
+    width: 350px;
+
+}
+
+label {
+    font-size: 50px;
+}
+
+button {
+    margin: 50px;
+    height: 150px;
+    width: 250px;
+    font-size: 50px;
+    background-color: lightgrey
+}
+  
