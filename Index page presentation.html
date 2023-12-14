@@ -8,9 +8,9 @@
         <style>
             /*carré de couleur argent pour la description */
              .boite-couleur-grise {
+                align-content: center;
                 width: 250px;
                 height: 330px;
-                align-content: center;
                 border-radius: 35px;
                 padding: 10px;
              }
@@ -25,13 +25,19 @@
 
              /*Couleur des boîtes de commentaires */
              .boîtes-commentaires {
-                width: 300px;
-                height: 250px;
-                align-content: center;
-                border-radius: 35px;
-                padding: 10px;
                 display: flex;
                 flex-direction: column;
+                width: 300px;
+                height: 200px;
+                border-radius: 35px;
+                padding: 10px;
+
+             }
+
+             .etoiles-commentaires {
+                display: flex;
+                border-radius: 35px;
+                padding: 10px;
              }
         </style>
     </head>
@@ -80,8 +86,81 @@
         <section>
             <div class="commentaire"><p>Commentaires</p></div> 
         </section>
+        <!--section de code pour l'espace commentaire -->
         <section>
-            
+            <div class="flex-colonne-commentaire">
+                <div class="flex-rangé-commentaire">
+                    <div class="boîtes-commentaires" style="background-color: lightgray;">
+                        <div class="etoiles-commentaires"> 
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                        </div>
+                        <div class="nom-personne-commentaire"><p>Marco R.</p></div>
+                        <div class="texte-commentaire">
+                            <p>J'ai acheté ce t-shirt et franchement, il est juste incroyable!😍😍😍</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Deuxième flex box de commentaires-->
+                <div class="flex-colonne-commentaire">
+                    <div class="flex-rangé-commentaire">
+                        <div class="boîtes-commentaires" style="background-color: lightgray;">
+                            <div class="etoiles-commentaires"> 
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            </div>
+                            <div class="nom-personne-commentaire"><p>Jean C.</p></div>
+                            <div class="texte-commentaire">
+                                <p>Je pensais que j'allais être déçu en achetant ce chandail, ça fait depuis 3 mois maintenant. Finalement c'était le bon choix.
+                                    Je vais en racheter un autre bientôt.😁😁</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-colonne-commentaire">
+                <div class="flex-rangé-commentaire-2">
+                    <div class="boîtes-commentaires" style="background-color: lightgray;">
+                        <div class="etoiles-commentaires"> 
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                        </div>
+                        <div class="nom-personne-commentaire"><p>Melissa B.</p></div>
+                        <div class="texte-commentaire">
+                            <p>J'ai voulu faire plaisir à mon mec en lui achetant ce chandail puisque c'était la tendance, il était plus que ravi.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex-colonne-commentaire">
+                    <div class="flex-rangé-commentaire">
+                        <div class="boîtes-commentaires" style="background-color: lightgray;">
+                            <div class="etoiles-commentaires"> 
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                                <div class="image-etoile"> <img src="Images/star.png" alt="Image d'étoiles noires"></div>
+                            </div>
+                            <div class="nom-personne-commentaire"><p>Joey E.</p></div>
+                            <div class="texte-commentaire">
+                                <p>J'ai pas grand chose à dire, à part que c'est pas mal, vraiment pas mal, je pense qu'il y a mieux, 
+                                    par gentillesse, je mets 5 étoiles.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
         </section>
     </body>
 </html>

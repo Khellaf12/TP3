@@ -1,24 +1,24 @@
 /*Titre du site e-commerce*/
 .Titre {
-    width: 100px;
-    height: 10px;
-    padding-right: 100px;
-    padding-top: 15px;
-    padding-bottom: 35px;
+    display: flex;
     text-align: center;
     align-items: center;
     font-weight: bolder;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 75px;
     text-align: center;
+    width: 100px;
+    height: 10px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    font-size: 75px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    display: flex;
-    
 }
 
 /*Sous-titre de section du site e-commerce */
 .sous-titre {
+    display: flex;
     text-align: center;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -26,15 +26,14 @@
     font-weight: normal;
     text-align: center;
     font-size: 30px;
-    display: flex;
     padding-bottom: 10px;
 }
 
 /* Icone de la page d'accueil, début du texe au dessus de l'image de vêtement */
 .Icone img {
+    display: flex;
     width: 15px;
     height: 15px;
-    display: flex;
     margin-right: 10px;
 }
 
@@ -48,19 +47,19 @@
 
 /*Box de l'icône et les mots au dessus de l'image */
 .en-tete-section {
-    margin-left: 70px;
     display: flex;
     align-items: center;
     height: fit-content;
     width: fit-content;
+    margin-left: 70px;
 }
 
 .Image-chandails {
     display: flex;
-    height: 550px;
-    width: fit-content;
-    border-radius: 15px;
     overflow: hidden;
+    width: fit-content;
+    height: 550px;
+    border-radius: 15px;
 }
 
 /*Cette section c'est le flex box qui permet à la boite grsie d'être sur la ligne */
@@ -75,8 +74,8 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-left: 550px;
     flex-wrap: wrap;
+    margin-left: 550px;
 }
 
 /*Style de texte qui se trouve dans la boîte grise */
@@ -100,20 +99,20 @@
 
 /*Code pour le contour des boutons de tailles, il représente la selection */
 .contour-taille {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
     display: flex;
-    width: 100px;
-    height: 15px;
     text-align: center;
     align-items: center;
-    border-width: 0.1px;
     border-style: solid;
     border-radius: 5px;
     border-color: black;
     width: fit-content;
+    border-width: 0.1px;
+    width: 100px;
+    height: 15px;
     padding: 5px;
     margin-left: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-style: normal;
 }
 
 /*Code pour le bouton achat  */
@@ -124,8 +123,8 @@
     display: flex;
     text-align: center;
     align-items: center;
-    padding-left: 20px;
     color: white;
+    padding-left: 20px;
 }
 
 /*Sert à aligner le mot commentaire au milieu en dessous de l'image et la description  */
@@ -138,6 +137,63 @@
     font-weight: normal;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
-    padding-top: 25px; 
+    padding-top: 75px; 
     padding-left: 650px;
+}
+
+/* Section pour l'espace commentaire*/
+.flex-colonne-commentaire {
+    display: flex;
+    padding-left: 20px;
+}
+
+.flex-rangé-commentaire {    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.nom-personne-commentaire {
+    display: flex;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    width: fit-content;
+    text-align: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    width: fit-content;
+    height: 15px;
+    padding-left: 90px;
+    padding-top: 15px;
+}
+
+.texte-commentaire {
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    font-size: normal;
+    margin-bottom: 50px;
+}
+.image-etoile {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 35px;
+    padding-left: 15px;
+}
+
+.flex-rangé-commentaire-2 {    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-left: 350px;
+    margin-top: 50px;
 }
