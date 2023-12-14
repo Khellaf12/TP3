@@ -6,13 +6,15 @@
 
         <link href="mise en page index.css" rel="stylesheet" />
         <style>
-             .carré {
-                width: 300px;
-                height: 300px;
+            /*carré de couleur argent pour la description */
+             .boite-couleur-grise {
+                width: 250px;
+                height: 330px;
                 align-content: center;
-                border-radius: 15px;
+                border-radius: 35px;
                 padding: 10px;
              }
+             /*Couleur bouton achat */
              .carré-noir {
                 display: flex;
                 width: 100px;
@@ -20,43 +22,63 @@
                 border-radius: 15px;
                 margin: 15px;
              }
+
+             /*Couleur des boîtes de commentaires */
+             .boîtes-commentaires {
+                width: 300px;
+                height: 250px;
+                align-content: center;
+                border-radius: 35px;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+             }
         </style>
     </head>
 
     <body>
-        <!--En tête pour la catégorie, exemple: retourner à l'accueil, type de page, le style de produit.-->
-        <div class="main">
-           <div class="Icone"><img src="Images/maison.svg"></div>
-            <div class="texte"><p>Homme</p></div>
-            <div class="texte"><p>/</p></div>
-            <div class="texte"><p>Chandails</p></div>
-            <div class="texte"><p>/</p></div>
-            <div class="texte"><p>T-shirt Oversize</p></div>
-        </div>
-        <!--Code avec flex box pour l'image de produit-->
-        <div class="boite-information">
-            <div class="Image-chandails"><img src="Images/bmm40648_black_xl.jpg"></div>
-
-            <!--Boite d'information du produit-->
-            <div class="texte-info">
-                <div class="Titre"><p>Lucci</p></div>
-                <div class="sous-titre"><p>T-shirt Oversize</p></div>
-                <div class="carré" style="background-color: lightgray;">
-                    <div class="info-texte">
-                        <p>Le favori de cette saison a été choisi par la communauté. Le grand élu est notre T-shirt Oversize. Il englobe tout, fraîcheur, beauté, simplicité
-                            et mixité. En terme d'efficacité, notre t-shirt fait le poids, sans mauvais jeu de mot. Parce que OUI, il est lourd, mais votre démarche ne sera pas
-                            modifié.
-                        </p>
-                </div>
-                <div class="bouton-grandeur">
-                    <div class="contour-taille"><p>Petit</p></div>
-                    <div class="contour-taille"><p>Moyen</p></div>
-                    <div class="contour-taille"><p>Grand</p></div>
-                </div>
-                <div class="carré-noir" style="background-color: black;">
-                    <div class="texte-achat"><p>Acheter</p></div>  
-                </div>
+        <!--En-tête pour la catégorie, exemple: retourner à l'accueil, type de page, le style de produit.-->
+        <main>
+            <div class="en-tete-section">
+                <div class="Icone"><img src="Images/maison.svg"></div>
+            <div class="texte-en-tete-section"><p>Homme</p></div>
+            <div class="texte-en-tete-section"><p>/</p></div>
+            <div class="texte-en-tete-section"><p>Chandails</p></div>
+            <div class="texte-en-tete-section"><p>/</p></div>
+            <div class="texte-en-tete-section"><p>T-shirt Oversize</p></div>
             </div>
-        </div>
+        </main>
+
+        <!--Code avec flex box pour l'image de produit-->
+        <section>
+            <div class="flex-colonne-boite-information-grise">
+                <div class="Image-chandails"><img src="Images/bmm40648_black_xl.jpg"></div>
+                <!--Boite d'information du produit-->
+                <div class="flex-rangé-boite-information-grise">
+                    <div class="Titre"><p>Lucci</p></div>
+                    <div class="sous-titre"><p>T-shirt Oversize</p></div>
+                    <div class="boite-couleur-grise" style="background-color: lightgray;">
+                        <div class="texte-boite-grise">
+                            <p>Le favori de cette saison a été choisi par la communauté. Le grand élu est notre T-shirt Oversize. Il englobe tout, fraîcheur, beauté, simplicité
+                                et mixité. En terme d'efficacité, notre t-shirt fait le poids, sans mauvais jeu de mot. Parce que OUI, il est lourd, mais votre démarche ne sera pas
+                                modifié.
+                            </p>
+                    </div>
+    
+                    <!--Tailles des boutons-->
+                    <div class="bouton-grandeur">
+                        <div class="contour-taille"><p>Petit</p></div>
+                        <div class="contour-taille"><p>Moyen</p></div>
+                        <div class="contour-taille"><p>Grand</p></div>
+                    </div>
+                    <div class="carré-noir" style="background-color: black;">
+                        <div class="texte-achat"><p>Acheter</p></div>  
+                    </div>
+                </div>
+        </section>
+
+        <section>
+            <div class="commentaire"><p>Commentaires</p></div> 
+        </section>
     </body>
 </html>

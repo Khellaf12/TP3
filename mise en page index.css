@@ -1,49 +1,86 @@
+/*Titre du site e-commerce*/
 .Titre {
+    width: 100px;
+    height: 10px;
+    padding-right: 100px;
+    padding-top: 15px;
+    padding-bottom: 35px;
+    text-align: center;
+    align-items: center;
     font-weight: bolder;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 75px;
     text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    display: flex;
     
 }
+
+/*Sous-titre de section du site e-commerce */
+.sous-titre {
+    text-align: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+/* Icone de la page d'accueil, début du texe au dessus de l'image de vêtement */
 .Icone img {
     width: 15px;
     height: 15px;
     display: flex;
     margin-right: 10px;
 }
-.texte {
+
+.texte-en-tete-section {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: lighter;
     font-style: normal;
     font-size: small;
     margin: 5px;
 }
-.main {
+
+/*Box de l'icône et les mots au dessus de l'image */
+.en-tete-section {
+    margin-left: 70px;
     display: flex;
     align-items: center;
+    height: fit-content;
+    width: fit-content;
 }
+
 .Image-chandails {
     display: flex;
-    height: 500px;
+    height: 550px;
     width: fit-content;
-    
+    border-radius: 15px;
+    overflow: hidden;
 }
-.boite-information {
+
+/*Cette section c'est le flex box qui permet à la boite grsie d'être sur la ligne */
+.flex-colonne-boite-information-grise {
     display: flex;
+    padding-left: 20px;
 }
-.texte-info {
+
+/*Flexbox pour la boîte grise qui permet de la mettre à droite */
+.flex-rangé-boite-information-grise {    
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-left: 150px;
+    margin-left: 550px;
     flex-wrap: wrap;
 }
-.sous-titre {
-    font-family: Arial, Helvetica, sans-serif;
-}
-.info-texte {
+
+/*Style de texte qui se trouve dans la boîte grise */
+.texte-boite-grise {
     font-weight: lighter;
     font-style: normal;
     font-family: Arial, Helvetica, sans-serif;
@@ -52,6 +89,7 @@
     
 }
 
+/*Code css pour les supposés boutons de selections de tailles  */
 .bouton-grandeur {
     display: flex;
     width: 100px;
@@ -60,7 +98,7 @@
     margin: 15px;
 }
 
-
+/*Code pour le contour des boutons de tailles, il représente la selection */
 .contour-taille {
     display: flex;
     width: 100px;
@@ -74,8 +112,11 @@
     width: fit-content;
     padding: 5px;
     margin-left: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
 }
 
+/*Code pour le bouton achat  */
 .texte-achat {
     font-weight: lighter;
     font-style: normal;
@@ -87,3 +128,57 @@
     color: white;
 }
 
+/*Sert à aligner le mot commentaire au milieu en dessous de l'image et la description  */
+.commentaire {   
+    display: flex;
+    align-items: center;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    font-weight: normal;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 25px; 
+    padding-left: 650px;
+}
+
+/* Code pour l'image d'étoile*/
+
+
+.images {
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+    height: 35px;
+    width: 35px;
+    align-content: center;
+    justify-content: space-between;
+    border-width: 10px;
+    border-style: dashed;
+}
+/*Flexbox pour la boîte grise qui permet de la mettre à droite */
+.position-boîtes-commentaires {   
+    padding-top: 35px; 
+    display: flex;
+    text-align: center;
+    align-items: left;
+    flex-wrap: wrap;
+    border-width: 10px;
+    border-style: dashed;
+    width: fit-content;
+    height: fit-content;
+}
+.nom-personne {
+    font-weight: lighter;
+    font-style: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction: row;
+    align-content: center;
+    align-content: left;
+    border-style: dashed;
+    height: fit-content;
+    width: fit-content;
+    align-items: baseline;
+    padding-left: 20px;
+    border-width: 10px;
+}
